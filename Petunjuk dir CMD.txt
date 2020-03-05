@@ -1,0 +1,84 @@
+Menampilkan daftar file dan subdirektori dalam direktori.
+
+DIR [drive:] [path] [nama file] [/ A [atribut [:]]] [/ B] [/ C] [/ D] [/ L] [/ N]
+[/ O [[:] sortorder]] [/ P] [/ Q] [/ R] [/ S] [/ T [:] jangka waktu]] [/ W] [/ X] [/ 4]
+
+[drive:] [path] [nama file]
+Menentukan drive, direktori, dan / atau file yang akan dicantumkan.
+
+/ A Menampilkan file dengan atribut yang ditentukan.
+atribut D Direktori File read-only
+H File tersembunyi A File siap diarsipkan
+S File sistem I Tidak ada file yang diindeks konten
+L Reparse Points - Awalan yang berarti tidak
+/ B Gunakan format telanjang (tanpa informasi atau ringkasan judul).
+/ C Menampilkan seribu pemisah dalam ukuran file. Ini adalah
+standar. Gunakan / -C untuk menonaktifkan tampilan pemisah.
+/ D Sama lebar tetapi file diurutkan berdasarkan daftar kolom.
+/ L Gunakan huruf kecil.
+/ N Format daftar panjang baru di mana nama file berada di paling kanan.
+/ O Daftar berdasarkan file dalam urutan diurutkan.
+sortorder N Berdasarkan nama (huruf) S Dengan ukuran (terkecil dulu)
+E Dengan ekstensi (alfabet) D Menurut tanggal / waktu (terlama lebih dulu)
+G Group directories first - Awalan untuk membalikkan urutan
+/ P Jeda setelah setiap layar informasi.
+/ Q Tampilkan pemilik file.
+/ R Menampilkan aliran data alternatif file.
+/ S Menampilkan file dalam direktori yang ditentukan dan semua subdirektori.
+/ T Mengontrol bidang waktu yang ditampilkan atau digunakan untuk menyortir
+jangka waktu C Pembuatan
+Akses Terakhir
+W Terakhir Ditulis
+/ Menggunakan format daftar luas.
+/ X Ini menampilkan nama pendek yang dihasilkan untuk file non-8dot3
+nama. Formatnya adalah dari / N dengan nama pendek dimasukkan
+sebelum nama panjang. Jika tidak ada nama pendek, kosongkan
+ditampilkan di tempatnya.
+/ 4 Menampilkan empat digit tahun
+
+Switch mungkin sudah diatur sebelumnya dalam variabel lingkungan DIRCMD. Utama
+switch preset dengan mengawali setiap switch dengan - (tanda hubung) - misalnya, / -W.
+
+# Bhs Inggris ne...!!
+
+Displays a list of files and subdirectories in a directory.
+
+DIR [drive:] [path] [filename] [/ A [[:] attributes]] [/ B] [/ C] [/ D] [/ L] [/ N]
+  [/ O [[:] sortorder]] [/ P] [/ Q] [/ R] [/ S] [/ T [:] timefield]] [/ W] [/ X] [/ 4]
+
+  [drive:] [path] [filename]
+              Specifies drives, directories, and / or files to list.
+
+  / A Displays files with specified attributes.
+  attributes D Directories R Read-only files
+               H Hidden files A Files ready for archiving
+               S System files I Not content indexed files
+               L Reparse Points - Prefix meaning not
+  / B Use bare format (no heading information or summary).
+  / C Display the thousand separator in file sizes. This is the
+              default. Use / -C to disable display of separator.
+  / D Same as wide but files are sorted by column list.
+  / L Use lowercase.
+  / N New long list format where filenames are on the far right.
+  / O List by files in sorted order.
+  sortorder N By name (alphabetic) S By size (smallest first)
+               E By extension (alphabetic) D By date / time (oldest first)
+               G Group directories first - Prefix to reverse order
+  / P Pauses after each screenful of information.
+  / Q Display the owner of the file.
+  / R Display alternate data streams of the file.
+  / S Displays files in specified directory and all subdirectories.
+  / T Controls which time field is displayed or used for sorting
+  timefield C Creation
+              A Last Access
+              W Last Written
+  / Wides a wide list format.
+  / X This displays the short names generated for non-8dot3 files
+              names. The format is that of / N with the short name inserted
+              before the long name. If no short name is present, blanks are
+              displayed in its place.
+  / 4 Displays four-digit years
+
+The switches may be preset in the DIRCMD environment variable. Overriding
+preset switches by prefixing any switch with - (hyphen) - for example, / -W.
+
